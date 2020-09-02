@@ -122,6 +122,10 @@ apply_state () {
     fi
 }
 
+LINES=$(git diff --name-only HEAD HEAD~3 | grep yaml)
 while read line; 
     do apply_state $line;
-done < <(git diff --name-only HEAD HEAD~1 | grep yaml)
+done <<<$LINES
+# while read line; 
+#     do apply_state $line;
+# done < <(git diff --name-only HEAD HEAD~1 | grep yaml)
