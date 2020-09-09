@@ -13,7 +13,7 @@ spec:
   provisionedcluster:
     high_availability: false
     accountName: keithlee-aws-lcm
-    version: 1.17.8-2-amazon2
+    version: 1.18.5-2-amazon2
     cloudProviderConfig:
       awsConfig:
         azList:
@@ -44,4 +44,4 @@ spec:
         worker_node_count: '3'
         node_label_map: {}
         cloud_label_map: {}
-        version: 1.17.8-2-amazon2
+        version: 1.18.5-2-amazon2
