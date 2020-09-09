@@ -41,7 +41,7 @@ spec:
             instance_type: m5.large
             zone:
             - us-east-1a
-        worker_node_count: '1'
+        worker_node_count: '3'
         node_label_map: {}
         cloud_label_map: {}
         version: 1.17.8-2-amazon2
